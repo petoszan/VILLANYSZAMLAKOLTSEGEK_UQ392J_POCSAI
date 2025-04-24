@@ -1,47 +1,51 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.Globalization;
+﻿// Models/CalculateRequest.cs
+using System;
+using System.Linq;
+using System.Text.Json.Serialization;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 
 namespace VillanyszamlakoltsegApi.Models
 {
     public class ElectricityBillRequest
     {
-       
         public decimal UnitPrice { get; set; }
-        public string MatrixCsv { get; set; }
 
-        public int[] Years { get; private set; }
+       
+        public string[] MatrixRows { get; set; }
 
-        public decimal[,] Consumptions { get; private set; }
+        [JsonIgnore]
+        [BindNever]
+        public int[]? Years { get; private set; }
 
+        [JsonIgnore]
+        [BindNever]
+        public decimal[,]? Consumptions { get; private set; }
 
         public void ParseMatrix()
         {
-            var lines = MatrixCsv
-                .Split(new[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries); //StringSplitOptions.RemoveEmptyEntries space-k törlése
+            if (MatrixRows == null || MatrixRows.Length < 2)
+                throw new ArgumentException("Legalább fejléc és egy sor kell legyen a MatrixRows-ban.");
 
-            //if (lines.Length < 2)
-            //throw new ArgumentException("Legalább fejléc és egy sor kell legyen a CSV-ben.", nameof(MatrixCsv));
-
-            // Fejléc: évek
-            Years = lines[0]
+            // Fejléc
+            Years = MatrixRows[0]
                 .Split(',', StringSplitOptions.RemoveEmptyEntries)
-                .Select(s => int.Parse(s))
+                .Select(int.Parse)
                 .ToArray();
 
-            int yearCount = Years.Length;
-            int monthCount = lines.Length - 1;
-            Consumptions = new decimal[monthCount, yearCount];
+            int yc = Years.Length;
+            int mc = MatrixRows.Length - 1;
+            Consumptions = new decimal[mc, yc];
 
-            for (int m = 0; m < monthCount; m++)
+            for (int m = 0; m < mc; m++)
             {
-                var parts = lines[m + 1].Split(',', StringSplitOptions.RemoveEmptyEntries);
-                if (parts.Length != yearCount)
-                    throw new ArgumentException($"A(z) {m + 1}. CSV-sor nem megfelelő elemszámú.", nameof(MatrixCsv));
+                var parts = MatrixRows[m + 1]
+                    .Split(',', StringSplitOptions.RemoveEmptyEntries);
 
-                for (int y = 0; y < yearCount; y++)
-                {
-                    Consumptions[m, y] = decimal.Parse(parts[y], CultureInfo.InvariantCulture);
-                }
+                if (parts.Length != yc)
+                    throw new ArgumentException($"A {m + 1}. sor nem megfelelő elemszámú.");
+
+                for (int y = 0; y < yc; y++)
+                    Consumptions[m, y] = decimal.Parse(parts[y], System.Globalization.CultureInfo.InvariantCulture);
             }
         }
     }
