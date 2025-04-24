@@ -4,10 +4,22 @@ namespace VillanyszamlakoltsegApi.Data
 {
     public class ElectricityBillRepository
     {
-        ElectricityBill bill;
+        ElectricityBillRequest bill;
         public ElectricityBillRepository() 
         {
-            bill = new ElectricityBill();
+            bill = new ElectricityBillRequest();
         }
+
+        public void Create(ElectricityBillRequest bill)
+        {
+            this.bill = bill;
+        }
+
+        public ElectricityBillRequest Read()
+        {
+            return this.bill;
+        }
+
+        
     }
 }
