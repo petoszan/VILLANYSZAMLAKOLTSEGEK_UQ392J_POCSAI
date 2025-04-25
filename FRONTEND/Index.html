@@ -31,6 +31,30 @@
             <tfoot id="tfoot" class="fw-bold"></tfoot>
           </table>
         </div>
-    
+        <script>
+            const threshold = 350000;
+        
+            document.getElementById('calcForm').addEventListener('submit', async e => {
+              e.preventDefault();
+        
+              const unitPrice = parseFloat(document.getElementById('unitPrice').value);
+              const rows = document.getElementById('matrixRows')
+                .value.trim()
+                .split(/\r?\n/);
+        
+              // Kérés a backend felé
+              const resp = await fetch('/api/electricitybill/calculate', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ unitPrice, matrixRows: rows })
+              });
+              if (!resp.ok) {
+                alert('Hiba a szerver oldalon!');
+                return;
+              }
+              const data = await resp.json();
+        
+            })
+          </script>
 </body>
 </html>
