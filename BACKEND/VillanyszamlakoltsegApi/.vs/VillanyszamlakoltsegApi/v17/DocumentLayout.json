@@ -3,14 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\petip\\Desktop\\VILLANYSZAMLAKOLTSEGEK_UQ392J_POCSAI\\BACKEND\\VillanyszamlakoltsegApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{99479861-0E5C-4E4B-8F01-754EDF3AA234}|VillanyszamlakoltsegApi\\VillanyszamlakoltsegApi.csproj|c:\\users\\petip\\desktop\\villanyszamlakoltsegek_uq392j_pocsai\\backend\\villanyszamlakoltsegapi\\villanyszamlakoltsegapi\\controllers\\electricitybillcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{99479861-0E5C-4E4B-8F01-754EDF3AA234}|VillanyszamlakoltsegApi\\VillanyszamlakoltsegApi.csproj|solutionrelative:villanyszamlakoltsegapi\\controllers\\electricitybillcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{99479861-0E5C-4E4B-8F01-754EDF3AA234}|VillanyszamlakoltsegApi\\VillanyszamlakoltsegApi.csproj|c:\\users\\petip\\desktop\\villanyszamlakoltsegek_uq392j_pocsai\\backend\\villanyszamlakoltsegapi\\villanyszamlakoltsegapi\\models\\electricitybillrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{99479861-0E5C-4E4B-8F01-754EDF3AA234}|VillanyszamlakoltsegApi\\VillanyszamlakoltsegApi.csproj|solutionrelative:villanyszamlakoltsegapi\\models\\electricitybillrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{99479861-0E5C-4E4B-8F01-754EDF3AA234}|VillanyszamlakoltsegApi\\VillanyszamlakoltsegApi.csproj|c:\\users\\petip\\desktop\\villanyszamlakoltsegek_uq392j_pocsai\\backend\\villanyszamlakoltsegapi\\villanyszamlakoltsegapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{99479861-0E5C-4E4B-8F01-754EDF3AA234}|VillanyszamlakoltsegApi\\VillanyszamlakoltsegApi.csproj|solutionrelative:villanyszamlakoltsegapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -31,38 +23,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ElectricityBillController.cs",
-              "DocumentMoniker": "C:\\Users\\petip\\Desktop\\VILLANYSZAMLAKOLTSEGEK_UQ392J_POCSAI\\BACKEND\\VillanyszamlakoltsegApi\\VillanyszamlakoltsegApi\\Controllers\\ElectricityBillController.cs",
-              "RelativeDocumentMoniker": "VillanyszamlakoltsegApi\\Controllers\\ElectricityBillController.cs",
-              "ToolTip": "C:\\Users\\petip\\Desktop\\VILLANYSZAMLAKOLTSEGEK_UQ392J_POCSAI\\BACKEND\\VillanyszamlakoltsegApi\\VillanyszamlakoltsegApi\\Controllers\\ElectricityBillController.cs",
-              "RelativeToolTip": "VillanyszamlakoltsegApi\\Controllers\\ElectricityBillController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T21:09:59.589Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ElectricityBillRequest.cs",
-              "DocumentMoniker": "C:\\Users\\petip\\Desktop\\VILLANYSZAMLAKOLTSEGEK_UQ392J_POCSAI\\BACKEND\\VillanyszamlakoltsegApi\\VillanyszamlakoltsegApi\\Models\\ElectricityBillRequest.cs",
-              "RelativeDocumentMoniker": "VillanyszamlakoltsegApi\\Models\\ElectricityBillRequest.cs",
-              "ToolTip": "C:\\Users\\petip\\Desktop\\VILLANYSZAMLAKOLTSEGEK_UQ392J_POCSAI\\BACKEND\\VillanyszamlakoltsegApi\\VillanyszamlakoltsegApi\\Models\\ElectricityBillRequest.cs",
-              "RelativeToolTip": "VillanyszamlakoltsegApi\\Models\\ElectricityBillRequest.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAYwC4AAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T21:05:34.172Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\petip\\Desktop\\VILLANYSZAMLAKOLTSEGEK_UQ392J_POCSAI\\BACKEND\\VillanyszamlakoltsegApi\\VillanyszamlakoltsegApi\\Program.cs",
               "RelativeDocumentMoniker": "VillanyszamlakoltsegApi\\Program.cs",
               "ToolTip": "C:\\Users\\petip\\Desktop\\VILLANYSZAMLAKOLTSEGEK_UQ392J_POCSAI\\BACKEND\\VillanyszamlakoltsegApi\\VillanyszamlakoltsegApi\\Program.cs",
               "RelativeToolTip": "VillanyszamlakoltsegApi\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-24T20:56:18.78Z",
               "EditorCaption": ""

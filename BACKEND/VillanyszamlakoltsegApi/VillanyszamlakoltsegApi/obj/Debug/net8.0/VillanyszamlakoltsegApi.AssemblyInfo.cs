@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VillanyszamlakoltsegApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+82bf09d5c57c4d81394f61f09b2daccd6fd6ed36")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+22c7cc01d8484004803538f912fd070f2431143d")]
 [assembly: System.Reflection.AssemblyProductAttribute("VillanyszamlakoltsegApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VillanyszamlakoltsegApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
