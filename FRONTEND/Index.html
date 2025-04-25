@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Villanyszámla Kalkulátor</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body class="bg-light py-4">
+    <div class="container">
+        <h1 class="mb-4">Villanyszámla Költéség Kalkulátor</h1>
+    
+        <form id="calcForm" class="card p-4 mb-4 bg-white">
+          <div class="mb-3">
+            <label for="unitPrice" class="form-label">kWh egységár (Ft)</label>
+            <input type="number" step="0.001" class="form-control" id="unitPrice" placeholder="pl. 36.386" required>
+          </div>
+          <div class="mb-3">
+            <label for="matrixRows" class="form-label">
+              Fogyasztási mátrix (CSV sorok, első sor évek, utána havi adatok)
+            </label>
+            <textarea class="form-control" id="matrixRows" rows="14" placeholder="2020,2021,2022,2023,2024&#10;108,69,217,396,265&#10;69,223,190,400,230&#10;…" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Számítás</button>
+        </form>
+    
+        <div id="tableContainer" class="table-responsive d-none">
+          <table id="resultTable" class="table table-bordered text-center">
+            <thead id="thead"></thead>
+            <tbody id="tbody"></tbody>
+            <tfoot id="tfoot" class="fw-bold"></tfoot>
+          </table>
+        </div>
+    
+</body>
+</html>
