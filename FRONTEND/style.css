@@ -29,13 +29,21 @@ body.theme-default {
   body.theme-pink {
     background-color: #f8d7da;
     color: #000000;
+    background-image: url(pink_theme.png);
   }
-  
+  form {
+    opacity: 90%;
+    
+  }
+  form:hover{
+    opacity: 100%;
+  }
   
   /* Theme buttons spacing */
   #themeSelector .btn {
     margin-right: 4px;
   }
+
 
 
   

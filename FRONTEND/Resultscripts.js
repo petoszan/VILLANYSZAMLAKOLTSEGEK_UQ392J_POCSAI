@@ -35,7 +35,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 
   // Build table HTML
-  let html = '<table class="table table-bordered text-center"><thead><tr><th>Hónap</th>';
+  let html = '<table class="table table-bordered text-center" style=" "><thead><tr><th>Hónap</th>';
   years.forEach((yr, i) => {
     if (discounted[i]) {
       html += `<th style="background-color:#d4edda;">${yr}</th>`;
