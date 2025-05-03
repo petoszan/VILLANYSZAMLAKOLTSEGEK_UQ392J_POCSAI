@@ -51,9 +51,9 @@ window.addEventListener('DOMContentLoaded', () => {
       const key = `${yr}-${String(mi + 1).padStart(2, '0')}`;
       const cost = monthlyCosts[key];
       if (discounted[i]) {
-        html += `<td style="background-color:#d4edda;">${cost.toFixed(2)}</td>`;
+        html += `<td style="background-color:#d4edda;">${cost.toFixed(0)}</td>`;
       } else {
-        html += `<td>${cost.toFixed(2)}</td>`;
+        html += `<td>${cost.toFixed(0)}</td>`;
       }
     });
     html += '</tr>';
@@ -64,9 +64,9 @@ window.addEventListener('DOMContentLoaded', () => {
   years.forEach((yr, i) => {
     const total = yearlyCosts[yr];
     if (discounted[i]) {
-      html += `<td style="background-color:#d4edda;">${total.toFixed(2)}</td>`;
+      html += `<td style="background-color:#d4edda;">${total.toFixed(0)}</td>`;
     } else {
-      html += `<td>${total.toFixed(2)}</td>`;
+      html += `<td>${total.toFixed(0)}</td>`;
     }
   });
   html += '</tr></tfoot></table>';
