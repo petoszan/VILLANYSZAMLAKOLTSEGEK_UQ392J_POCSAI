@@ -24,13 +24,17 @@ body.theme-default {
   
   /* Pink theme */
   body.theme-pink {
-    background-color: #f7b8e7;
+    background-color: #f8d7da;
     color: #000000;
   }
-
-
+  
+  
   /* Theme buttons spacing */
   #themeSelector .btn {
     margin-right: 4px;
   }
-
+  textarea
+  {
+    background-color: palevioletred;
+  }
+  
