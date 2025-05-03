@@ -1,28 +1,30 @@
-:root{
-    --default: 
-}
+
 /* Default theme */
 body.theme-default {
     background-color: #ffffff;
     color: #000000;
+    background-image: url(default_theme.png);
   }
   
   /* Dark theme */
   body.theme-dark {
     background-color: #121212;
     color: #ffffff;
+    background-image: url(dark_theme.png);
   }
   
   /* Blue theme */
   body.theme-blue {
     background-color: #cce5ff;
     color: #000000;
+    background-image: url(blue_theme.png)
   }
   
   /* Gray theme */
   body.theme-gray {
     background-color: #e2e3e5;
     color: #000000;
+    background-image: url(gray_theme.png)
   }
   
   /* Pink theme */
@@ -31,11 +33,11 @@ body.theme-default {
     color: #000000;
     background-image: url(pink_theme.png);
   }
-  form {
-    opacity: 90%;
+  form, table {
+    opacity: 80%;
     
   }
-  form:hover{
+  form:hover, table:hover{
     opacity: 100%;
   }
   
