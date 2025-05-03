@@ -19,7 +19,7 @@ window.addEventListener('DOMContentLoaded', () => {
       body: JSON.stringify({ unitPrice, matrixRows: rows })
     });
     if (!resp.ok) {
-      alert('Hiba a szerveren: ' + resp.status);
+      alert('Hibás adatok találhatóak a beviteli mezőben ' + resp.status);
       return;
     }
     const data = await resp.json();
