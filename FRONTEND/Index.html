@@ -10,11 +10,11 @@
 </head>
 <body class="bg-light py-4">
   <div id="themeSelector" class="position-absolute top-0 start-0 p-2">
-    <button class="btn btn-sm btn-outline-secondary me-1" onclick="document.body.className='theme-default'">Alap</button>
-    <button class="btn btn-sm btn-outline-dark me-1" onclick="document.body.className='theme-dark'">Sötét</button>
-    <button class="btn btn-sm btn-outline-primary me-1" onclick="document.body.className='theme-blue'">Kék</button>
-    <button class="btn btn-sm btn-outline-secondary me-1" onclick="document.body.className='theme-gray'">Szürke</button>
-    <button class="btn btn-sm btn-outline-danger" onclick="document.body.className='theme-pink'">Rózsaszín</button>
+    <button class="btn btn-sm btn-outline-info me-1" onclick="localStorage.setItem('theme','theme-default');document.body.className='theme-default';">Alap</button>
+    <button class="btn btn-sm btn-outline-dark me-1" onclick="localStorage.setItem('theme','theme-dark');document.body.className='theme-dark';">Sötét</button>
+    <button class="btn btn-sm btn-outline-primary me-1" onclick="localStorage.setItem('theme','theme-blue');document.body.className='theme-blue';">Kék</button>
+    <button class="btn btn-sm btn-outline-secondary me-1" onclick="localStorage.setItem('theme','theme-gray');document.body.className='theme-gray';">Szürke</button>
+    <button class="btn btn-sm me-1" onclick="localStorage.setItem('theme','theme-pink');document.body.className='theme-pink';"  style="border:2px solid #e83e8c; color:#e83e8c;">Pink</button>
   </div>
 
     <div class="container">

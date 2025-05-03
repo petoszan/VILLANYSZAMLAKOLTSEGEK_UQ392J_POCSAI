@@ -1,3 +1,9 @@
+//Oldal formázása
+const theme = localStorage.getItem('theme') || 'theme-default';
+    document.body.classList.add(theme);
+
+
+
 window.addEventListener('DOMContentLoaded', () => {
   const container = document.getElementById('tableContainer');
   const storedJson = localStorage.getItem('calcResult');
