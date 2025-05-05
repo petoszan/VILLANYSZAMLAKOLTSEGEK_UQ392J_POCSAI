@@ -3,35 +3,35 @@
 body.theme-default {
     background-color: #ffffff;
     color: #000000;
-    background-image: url(default_theme.png);
+    background-image: url(Themes/default_theme.png); 
   }
   
   /* Dark theme */
   body.theme-dark {
     background-color: #121212;
     color: #ffffff;
-    background-image: url(dark_theme.png);
+    background-image: url(Themes/dark_theme.png);
   }
   
   /* Blue theme */
   body.theme-blue {
     background-color: #cce5ff;
     color: #000000;
-    background-image: url(blue_theme.png)
+    background-image: url(Themes/blue_theme.png)
   }
   
   /* Gray theme */
   body.theme-gray {
     background-color: #e2e3e5;
     color: #000000;
-    background-image: url(gray_theme.png)
+    background-image: url(Themes/gray_theme.png)
   }
   
   /* Pink theme */
   body.theme-pink {
     background-color: #f8d7da;
     color: #000000;
-    background-image: url(pink_theme.png);
+    background-image: url(Themes/pink_theme.png);
   }
   form, table {
     opacity: 80%;
