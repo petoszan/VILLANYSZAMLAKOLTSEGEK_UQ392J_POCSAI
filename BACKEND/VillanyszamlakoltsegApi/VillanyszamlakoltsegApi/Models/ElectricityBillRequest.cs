@@ -13,12 +13,10 @@ namespace VillanyszamlakoltsegApi.Models
        
         public string[] MatrixRows { get; set; }
 
-        [JsonIgnore]
-        [BindNever]
+     
         public int[]? Years { get; private set; }
 
-        [JsonIgnore]
-        [BindNever]
+       
         public decimal[,]? Consumptions { get; private set; }
 
         public void ParseMatrix()

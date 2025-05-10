@@ -5,7 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Swagger
 builder.Services.AddSwaggerGen();
 
-// CORS engedélyezése, hogy a frontendet bárhonnan el tudd érni
+// CORS engedélyezése, hogy a frontendet bárhonnan el tudjam érni
 builder.Services.AddCors(options =>
 {
     options.AddDefaultPolicy(policy => policy
